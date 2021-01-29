@@ -1,0 +1,349 @@
+body {
+  font-family: "Space Mono";
+}
+h1 {
+  color: #f4f4f4;
+  font-weight: 700;
+  font-size: 67px;
+  margin-bottom: 0;
+}
+h1 span {
+  color: #f67e7d;
+}
+p {
+  color: #f4f4f4;
+  font-size: 40px;
+  margin-top: 0;
+}
+
+/* Background Section */
+.rotate {
+  height: 60vh;
+  position: absolute;
+  z-index: 2;
+  top: 23%;
+  right: 10%;
+  animation: rotation 70s linear infinite;
+}
+@keyframes rotation {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(359deg); }
+}
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.stars {
+  background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: block;
+}
+.twinkling {
+  width: 10000px;
+  height: 100%;
+  background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+  background-size: 1000px 1000px;
+  animation: twinklingMove 60s linear infinite;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+@keyframes twinklingMove {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(1000px, 0, 0);
+  }
+}
+
+/* Navigation bar Section */
+.menu-icon {
+  border-radius: 40%;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 15px;
+  position: absolute;
+  right: 3%;
+  top: 5%;
+  z-index: 1;
+}
+.menu-icon:hover {
+  border-color: #222831;
+  cursor: pointer;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.link-item {
+  color: #818181;
+  display: block;
+  font-size: 36px;
+  padding: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.close-icon {
+  color: #818181;
+  cursor: pointer;
+  position: absolute;
+  right: 67px;
+  top: 37px;
+}
+.link-item:hover, .close-icon:hover {
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+                            /* END OF SECTION ONE : NAVBAR + BACKGROUND IMAGE */
+/* Home Section */
+.content {
+  top: 30%;
+  left: 5%;
+  position: absolute;
+  z-index: 1;
+}
+
+/* About Me Section */
+.title {
+  color: #f4f4f4;
+  font-size: 67px;
+  font-weight: bold;
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  z-index: 1;
+}
+.title span {
+  color: #a685e2;
+}
+.aboutme-box {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  text-align: center;
+  top: 15%;
+  padding: 5% 0;
+  z-index: 1;
+}
+.aboutme p {
+  font-size: 17px;
+  text-align: left;
+  padding: 0 5%;
+}
+.icon {
+  color: #f4f4f4;
+  margin: 0 2%;
+}
+.pinkypaw {
+  color: #eaac7f;
+}
+.avatar {
+  padding: 3% 5% 0;
+}
+footer {
+  background-color: #a6a9b6;
+  color: #ffffff;
+  font-family: "Trispace";
+  opacity: 0.7;
+  position: fixed;
+  margin-top: 10%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+.mycredit {
+  font-size: 17px;
+  margin: 12px 0 7px;
+}
+.credit {
+  color: #31326f;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+
+/* Projects Section */
+.content-box {
+  padding-top: 12%;
+  margin-left: 2%;
+}
+.card {
+  background: transparent;
+  width: 23rem;
+}
+.card-title {
+  color: #ffabe1;
+  font-weight: 700;
+}
+.card-text {
+  color: #f3f3f3;
+  font-size: 15px;
+  padding-left: 7%;
+}
+.card-image {
+  border-radius: 3%;
+}
+.card-image:hover {
+  opacity: 0.8;
+}
+.btn {
+  margin-left: 0;
+}
+
+
+/* Contact Me Section */
+.title-contact {
+  color: #f4f4f4;
+  font-size: 67px;
+  font-weight: bold;
+  position: absolute;
+  top: 20%;
+  left: 22%;
+  z-index: 1;
+}
+.title-contact span {
+  color: #a685e2;
+}
+.social-icon {
+  color: #f4f4f4;
+  cursor: pointer;
+  margin: 1% 2%;
+  position: relative;
+  top: 20rem;
+  left: 25rem;
+  z-index: 1;
+}
+.social-icon:hover {
+  color: #a685e2;
+}
+
+
+/* RESPONSIVE */
+@media screen and (max-width: 985px) and (min-width: 500px){
+  .rotate {
+    height: 50vh;
+    top: 25%;
+    right: 5%;
+    animation: none;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 30px;
+  }
+/* Home Section */
+  .content {
+    top: 30%;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 786px) {
+  /* About Me Section */
+  .title {
+    color: #f4f4f4;
+    font-size: 67px;
+    font-weight: bold;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    z-index: 1;
+  }
+  .mycredit {
+    font-size: 17px;
+    margin: 8px 0 5px;
+  }
+  .aboutme-box {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .aboutme p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .icon {
+    font-size: 2em;
+    margin: 0 2% 15%;
+  }
+  .content-box {
+    padding-top: 27%;
+    margin-left: 7%;
+  }
+  .title {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1125px) {
+  /* Projects Section */
+  .content-box {
+    padding-top: 17%;
+    margin: 0;
+  }
+  .card {
+    background: transparent;
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /* Contact Me Section */
+  .title-contact {
+    font-size: 47px;
+    top: 30%;
+    left: 22%;
+  }
+  .social-icon {
+    font-size: 4em;
+    margin: 0 2%;
+    top: 20rem;
+    left: 17rem;
+  }
+}
+@media screen and (max-width: 710px) {
+  .title-contact {
+    font-size: 47px;
+    top: 13%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .social-icon {
+    display: block;
+    font-size: 4em;
+    margin-bottom: 2%;
+    top: 17rem;
+    left: 0;
+    text-align: center;
+  }
+  .content-box {
+    margin: 10% 8%;
+  }
+}
