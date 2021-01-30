@@ -285,15 +285,15 @@ footer {
     margin-left: 0;
   }
   .title-contact {
-    font-size: 50px;
+    font-size: 47px;
     margin-top: 7%;
-    left: 18%;
+    left: 15%;
   }
   .social-icon {
     font-size: 57px;
     margin-top: 0;
-    top: 17rem;
-    left: 15rem;
+    top: 20rem;
+    left: 13rem;
   }
 }
 
@@ -313,20 +313,20 @@ footer {
     width: 30rem;
   }
   .title-contact {
-    font-size: 47px;
+    font-size: 45px;
     text-align: center;
     margin-top: 5%;
     top: 15%;
-    left: 15%;
+    left: 12%;
 
   }
   .social-icon {
-    display: block;
+    /* display: block; */
     font-size: 50px;
     padding: 2% 0;
     top: 17rem;
-    left: 14rem;
-    overflow-x: hidden;
+    left: 8rem;
+    /* overflow-x: hidden; */
   }
 }
 
