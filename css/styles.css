@@ -292,7 +292,6 @@ footer {
   .social-icon {
     font-size: 57px;
     margin-top: 0;
-    top: 20rem;
     left: 13rem;
   }
 }
@@ -315,7 +314,7 @@ footer {
     font-size: 45px;
     text-align: center;
     margin-top: 0;
-    top: 20%;
+    top: 12%;
     left: 17%;
 
   }
