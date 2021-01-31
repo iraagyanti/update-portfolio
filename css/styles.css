@@ -218,14 +218,17 @@ footer {
 
 
 /* Contact Me Section */
+#contact-box {
+  display: block;
+  position: absolute;
+  text-align: center;
+  margin: 13% 20% 0;
+  z-index: 1;
+}
 .title-contact {
   color: #f4f4f4;
   font-size: 67px;
   font-weight: bold;
-  position: absolute;
-  top: 20%;
-  left: 22%;
-  z-index: 1;
 }
 .title-contact span {
   color: #a685e2;
@@ -233,11 +236,7 @@ footer {
 .social-icon {
   color: #f4f4f4;
   cursor: pointer;
-  margin: 1% 2%;
-  position: relative;
-  top: 20rem;
-  left: 25rem;
-  z-index: 1;
+  margin: 3% 2% 0;
 }
 .social-icon:hover {
   color: #B0E0E6;
@@ -284,19 +283,15 @@ footer {
   .space-card {
     margin-left: 0;
   }
-  .title-contact {
-    font-size: 47px;
-    margin-top: 7%;
-    left: 15%;
+  #contact-box {
+    margin-top: 17%;
   }
-  .social-icon {
-    font-size: 57px;
-    margin-top: 0;
-    left: 13rem;
+  .title-contact, .social-icon {
+    font-size: 55px;
   }
 }
 
-@media screen and (max-width: 570px) and (min-width: 375px){
+@media screen and (max-width: 570px) {
   .title {
     font-size: 47px;
   }
@@ -310,7 +305,7 @@ footer {
   .card {
     width: 30rem;
   }
-  .title-contact {
+  /* .title-contact {
     font-size: 45px;
     text-align: center;
     margin-top: 0;
@@ -324,5 +319,5 @@ footer {
     padding: 2% 0;
     top: 17rem;
     left: 10rem;
-  }
+  } */
 }
