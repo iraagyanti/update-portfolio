@@ -314,8 +314,8 @@ footer {
   .title-contact {
     font-size: 45px;
     text-align: center;
-    margin-top: 5%;
-    top: 16%;
+    margin-top: 0;
+    top: 20%;
     left: 17%;
 
   }
