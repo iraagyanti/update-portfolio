@@ -303,7 +303,6 @@ footer {
   }
   #bio-box {
     margin-top: 22%;
-    /* padding-bottom: 10%; */
   }
   #content-box {
     margin-top: 23%;
@@ -316,99 +315,14 @@ footer {
     font-size: 45px;
     text-align: center;
     margin-top: 5%;
-    top: 15%;
+    top: 18%;
     left: 12%;
 
   }
   .social-icon {
-    /* display: block; */
     font-size: 50px;
     padding: 2% 0;
-    top: 17rem;
-    left: 8rem;
-    /* overflow-x: hidden; */
-  }
-}
-
-
-/* @media screen and (max-width: 786px) {
-  About Me Section
-  .title {
-    color: #f4f4f4;
-    font-size: 67px;
-    font-weight: bold;
-    position: absolute;
-    top: 5%;
-    left: 3%;
-    z-index: 1;
-  }
-  .mycredit {
-    font-size: 17px;
-    margin: 8px 0 5px;
-  }
-  .aboutme-box {
-    flex-direction: column;
-    margin-top: 0;
-  }
-  .aboutme p {
-    font-size: 14px;
-    text-align: center;
-  }
-  .icon {
-    font-size: 2em;
-    margin: 0 2% 15%;
-  }
-  .content-box {
-    padding-top: 27%;
-    margin-left: 7%;
-  }
-  .title {
-    font-size: 50px;
-  }
-}
-@media screen and (max-width: 1125px) {
-  Projects Section
-  .content-box {
-    padding-top: 17%;
-    margin: 0;
-  }
-  .card {
-    background: transparent;
-    width: 20rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  Contact Me Section
-  .title-contact {
-    font-size: 47px;
-    top: 30%;
-    left: 22%;
-  }
-  .social-icon {
-    font-size: 4em;
-    margin: 0 2%;
     top: 20rem;
-    left: 17rem;
+    left: 8rem;
   }
 }
-@media screen and (max-width: 710px) {
-  .title-contact {
-    font-size: 47px;
-    top: 13%;
-    left: 0;
-    text-align: center;
-    width: 100%;
-  }
-  .social-icon {
-    display: block;
-    font-size: 4em;
-    margin-bottom: 2%;
-    top: 17rem;
-    left: 0;
-    text-align: center;
-  }
-  .content-box {
-    margin: 10% 8%;
-  }
-} */
